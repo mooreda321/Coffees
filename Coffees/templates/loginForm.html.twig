@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Home Page {% endblock %}
+
+{% block main %}
+
+<h1>Login</h1>
+
+<form
+        method="post"
+        action="index.php"
+>
+    <input type="hidden" name="action" value="processLogin">
+
+    Username:
+    <input name="username">
+    <p>
+    Password:
+    <input name="password">
+    <input type="submit" value="login">
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Tudublin\\":"src"
+    }
+  },
+  "require": {
+    "twig/twig": "^2.12",
+    "mattsmithdev/pdo-crud-for-free-repositories": "^1.1",
+    "fzaninotto/faker": "^1.9"
+  }
+}

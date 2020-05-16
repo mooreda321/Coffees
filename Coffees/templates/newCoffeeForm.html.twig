@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} New Coffee {% endblock %}
+
+{% block main %}
+
+<h1> New Coffee</h1>
+
+<form action="/" method="post">
+    <input type="hidden" name="action" value="processNewCoffee">
+
+    <p>
+        Title:
+        <input name="title">
+    </p>
+    <p>
+        Category:
+        <input name="category">
+    </p>
+    <p>
+        Price:
+        <input name="price">
+    </p>
+        <input type="submit">
+</form>
+
+{% endblock %}

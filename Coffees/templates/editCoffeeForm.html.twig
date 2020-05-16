@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Edit Coffee {% endblock %}
+
+{% block main %}
+
+<h1> Edit Coffee</h1>
+
+
+<form action="/" method="post">
+    <input type="hidden" name="action" value="processEditCoffee">
+    <p>
+        ID:
+        <input name="id" value="{{ coffee.id }}" readonly>
+    </p>
+    <p>
+        Title:
+        <input name="title" value="{{ coffee.title }}">
+    </p>
+    <p>
+        Category:
+        <input name="category" value="{{ coffee.category }}">
+    </p>
+    <p>
+        Price:
+        <input name="price" value="{{ coffee.price }}">
+    </p>
+    <p>
+        Total Votes:
+        <input name="voteTotal" value="{{ coffee.voteTotal }}">
+    </p>
+    <p>
+        Num Votes:
+        <input name="numVotes" value="{{ coffee.numVotes }}">
+    </p>
+        <input type="submit">
+
+
+</form>
+{% endblock %}
