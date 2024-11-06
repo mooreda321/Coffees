@@ -5,7 +5,7 @@
     }
   },
   "require": {
-    "twig/twig": "^2.12",
+    "twig/twig": "^3.11",
     "mattsmithdev/pdo-crud-for-free-repositories": "^1.1",
     "fzaninotto/faker": "^1.9"
   }
